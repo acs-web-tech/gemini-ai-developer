@@ -2,7 +2,7 @@ import requests
 
 api_key = "my_api_key"
 
-url = "http://cloud.4ducate.com/apis/search_vector"
+url = "http://4dcloud.cloud/apis/search_vector"
 
 headers = {
     "4dcloud-auth-token": api_key,
@@ -10,7 +10,7 @@ headers = {
 }
 
 body = {
-    "projectid":"project_id",
+    "projectid":"34554544",
     "query":"father son",
     "result_count":5                                                                                                                                                                                                                                                                
 }
