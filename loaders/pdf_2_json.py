@@ -1,6 +1,8 @@
-import sys
-sys.path.insert(0,r"C:\Users\ganes\OneDrive\Documents\eng services llm\gemini-ai-developer\loaders")
+import json
 from langchain_community.document_loaders import PyPDFLoader
-loader = PyPDFLoader(r"\assests\elecdesignbasis.pdf")
-pages = loader.load_and_split()
-print(pages)
+from utils.iterator import document_iterator
+def readPdf(path):
+   loader = PyPDFLoader(path)
+   pages = loader.load_and_split()
+   doc_json = document_iterator(pages)
+   return doc_json
