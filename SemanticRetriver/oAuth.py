@@ -1,6 +1,6 @@
 from google.oauth2 import service_account
 from scopes import SEMANTIC_RETRIVER_SCOPE
-service_account_file_name = "SemanticRetriver/secrets/semantic-retriver-service-account.json"
+service_account_file_name = "SemanticRetriver/secrets/focal-disk-406219-43da4032f7d9.json"
 credentials = service_account.Credentials.from_service_account_file(service_account_file_name)
 scoped_credentials = credentials.with_scopes(SEMANTIC_RETRIVER_SCOPE)
 
